@@ -1,0 +1,5 @@
+ * Preferences should actually affect widget appearance
+ * Implement color picker
+ * Provide font changing
+ * Fix the method by which the widget updates
+ * Background color options
