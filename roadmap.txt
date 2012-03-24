@@ -1,0 +1,4 @@
+- använda alarm istället för sleep
+- klicka på den för att komma åt meny
+  - byta stil, strlk
+  - kunna visa 100-delar

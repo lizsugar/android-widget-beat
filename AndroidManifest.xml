@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="nu.kabo.android.beat"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+		<receiver android:name=".Beat" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="nu.kabo.android.beat.UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider" 
+				android:resource="@xml/beat_provider" />
+		</receiver>
+		<service android:name=".BeatService">
+			<intent-filter>
+				<action android:name="nu.kabo.android.beat.START_SERVICE" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="nu.kabo.android.beat.STOP_SERVICE" />
+			</intent-filter>
+		</service>
+    </application>
+	<uses-sdk android:minSdkVersion="7" />
+</manifest> 
