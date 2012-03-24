@@ -19,5 +19,7 @@ Planned features
 -------
 
 Choose text-style (weight, font, size, color, etc) 
+
 Choose between different graphical designs 
+
 Use handler and sendEmptyMessageDelayed() instead of while (true) { updatetime(); sleep() }
